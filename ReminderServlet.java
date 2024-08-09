@@ -32,7 +32,7 @@ public class ReminderServlet extends HttpServlet {
         // Schedule the reminder
         scheduleReminder(day, time, activity);
         
-        response.setContentType("text/html");
+        response.setContentType("text/index.html");
         PrintWriter out = response.getWriter();
         out.println("<h2>Reminder Set Successfully!</h2>");
         out.println("<p>Activity: " + activity + "</p>");
